@@ -206,7 +206,11 @@ var Typeahead = React.createClass({
     return this.props.onOptionSelected(option, event);
   },
 
-  _onTextEntryUpdated: function(resetSelection = true) {
+  _onTextEntryUpdated: function(resetSelection) {
+    if (typeof resetSelection === 'undefined') {
+      resetSelection = true;
+    }
+
     var value = this.refs.entry.value;
 
     this.setState({searchResults: this.getOptionsForValue(value, this.props.options),
