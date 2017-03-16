@@ -1,6 +1,6 @@
 {
   "name": "cw-react-typeahead",
-  "version": "2.0.0-alpha.10",
+  "version": "2.0.0-alpha.11",
   "description": "React-based typeahead and typeahead-tokenizer",
   "keywords": [
     "react",
